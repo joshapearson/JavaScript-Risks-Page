@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>risk assessment website</title>
+</head>
+
+<style>
+
+html {
+    background-image: url("http://wallup.net/wp-content/uploads/2016/01/273551-military-helicopters-military_aircraft-Sikorsky_UH-60_Black_Hawk-736x459.jpg");
+	background-repeat: no repeat;
+	background-size: cover;	
+}
+
+h1.first_header {
+text-align: center;
+color: black;
+font-size: 80px;
+}
+
+h2.second_header {
+color: black;
+font-size: 40px;
+}
+
+
+</style>
+<h1 class="first_header">AirFrame Risk Assessment Tool.</h1>
+
+<h2 class="second_header">Airframe life cycle<h2>
+
+<h2 id="risk level">Risk level: <h2>
+
+<div id="content">Click button to change content</div>
+
+<input type="button" value="low" id="low">
+
+<input type="button" value="medium" id="medium">
+
+<input type="button" value="high" id="high">
+
+<script type="text/javascript">
+
+$("input[type='button']").click(function() {
+    switch (this.id) { 
+    case 'low':
+        $("#content").html("low");
+        break;
+    case 'medium':
+        $("#content").html("medium");
+        break;
+	case 'high'
+	$("#conent").html("high")
+    }
+});
+
+</script>
+
+
+
+ 
+
+</body>
+
+</html>
