@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="type1" onclick="myFunction1()"> change risk level: low</button>
+<button id="type2" onclick="myFunction2()"> change risk level:Medium</button>
+<button id="type3" onclick="myFunction3()"> change risk level: High</button>
+
+<h1>operation hours</h1>
+<p>risk level:<span id="risk1"></span></p>
+
+<p>Previous Risk Level:<span id="risk2"></span></p>
+
+<script>
+var Risk = document.getElementById("risk1")
+function myFunction1() {
+ document.getElementById("risk2").innerHTML = Risk.innerHTML;
+ document.getElementById("risk1").innerHTML = "Low";
+ 
+}
+function myFunction2() {
+    
+     document.getElementById("risk2").innerHTML = Risk.innerHTML;
+	document.getElementById("risk1").innerHTML = "Medium";
+}
+function myFunction3() {
+ document.getElementById("risk2").innerHTML = Risk.innerHTML; 
+ document.getElementById("risk1").innerHTML = " High";
+}
+</script>
+
+</body>
+</html>
